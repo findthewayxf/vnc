@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  IMAGE_NAME: your-image-name
+  IMAGE_NAME: findthewayxf/my-vnc-chrome
 
 jobs:
   build:
@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: findthewayxf/my-vnc-chrome:latest
+          tags: ${{ env.IMAGE_NAME }}:latest
