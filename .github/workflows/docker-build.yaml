@@ -27,4 +27,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.my-vnc-chrome }}:latest
+          tags: ${{ env.findthewayxf/my-vnc-chrome }}:latest
