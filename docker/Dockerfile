@@ -16,7 +16,7 @@ RUN apt-get update && \
 RUN x11vnc -storepasswd password ~/.vnc/passwd
 
 # 添加启动脚本
-ADD start.sh /start.sh
+ADD ./docker/start.sh /start.sh
 RUN chmod 0755 /start.sh
 
 # 设置环境变量
