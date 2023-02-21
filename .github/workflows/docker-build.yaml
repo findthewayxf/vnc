@@ -44,6 +44,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: ./
-          file: ./Dockerfile
+          file: ./docker/Dockerfile
           push: true
-          tags: findthewayxf/my-vnc-chrome:latest,findthewayxf/my-vnc-chrome:${{ env.VERSION }}
+          #tags: findthewayxf/my-vnc-chrome:latest,findthewayxf/my-vnc-chrome:${{ env.VERSION }}
+          tags: findthewayxf/my-vnc-chrome:${{ env.VERSION }}
