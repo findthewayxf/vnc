@@ -3,7 +3,6 @@ name: Docker Build and Push image
 on:
   push:
     branches:
-      
       - "release/*.*.*"
 
 
